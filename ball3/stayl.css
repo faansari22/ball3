@@ -1,0 +1,59 @@
+/*General CSS START*/
+body{
+background: linear-gradient(to left,#80a9be, #7a999d);
+overflow: hidden;
+}
+
+.Container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:transparent;
+  width: 100%;
+  height: 100px;
+}
+/*General CSS End*/
+
+/*ball CSS START*/
+.ball{
+  height: 120px;
+  width: 120px;
+  border-radius: 120%;
+  position: absolute;
+  background-color: #ca1909;
+  top: 0;
+  left: -30px;
+  animation: movement 2.5s linear infinite;
+  background-image: url(img/download.jfif);
+}
+
+@keyframes movement {
+  16%, 48%, 78% {
+    top: 300px;
+    animation-timing-function: ease-out;
+  }
+
+  32% {
+    top: 50px;
+    animation-timing-function: ease-in;
+  }
+
+  62% {
+    top: 150px;
+    animation-timing-function: ease-in;
+  }
+
+  90% {
+    top: 200px;
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    top: 270px;
+    left: 100%;
+    animation-timing-function: ease-out;
+    transform: rotate(360deg);
+  }
+}
+/*ball CSS End*/
